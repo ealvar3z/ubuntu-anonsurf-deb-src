@@ -29,7 +29,7 @@ apt-get install -y i2p-keyring #this will ensure you get updates to the reposito
 apt-get install -y secure-delete tor i2p # install dependencies, just in case
 
 # Configure and install the .deb
-dpkg-deb -b kali-anonsurf-deb-src/ kali-anonsurf.deb # Build the deb package
-dpkg -i kali-anonsurf.deb || (apt-get -f install && dpkg -i kali-anonsurf.deb) # this will automatically install the required packages
+dpkg-deb -b ubuntu-anonsurf-deb-src/ ubuntu-anonsurf.deb # Build the deb package
+dpkg -i ubuntu-anonsurf.deb || (apt-get -f install && dpkg -i ubuntu-anonsurf.deb) # this will automatically install the required packages
 
 exit 0
